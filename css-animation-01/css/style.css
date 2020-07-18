@@ -1318,117 +1318,166 @@ animation08
 }
 
 @media screen and (max-width: 750px) {
-/*===================
+    /*===================
 animation02
 ====================*/
-@keyframes animation02 {
-    0% {
-        transform: scale3d(0, 0, 1);
-        opacity: 1;
+    @keyframes animation02 {
+        0% {
+            transform: scale3d(0, 0, 1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale3d(1.2, 1.2, 1);
+            opacity: 1;
+        }
     }
-    100% {
-        transform: scale3d(1.2, 1.2, 1);
-        opacity: 1;
-    }
-}
-/*==============
+    /*==============
 green circle
 ==============*/
-.green01 {
-    width: 70vw;
-    height: 70vw;
-}
-.green01::before {
-    left: 35vw;
-    width: 70vw;
-    height: 70vw;
-    transform-origin: left 35vw;
-}
-.green01::after {
-    left: -35vw;
-    width: 70vw;
-    height: 70vw;
-    transform-origin: right 35vw;
-}
-/*==============
+    .green01 {
+        width: 70vw;
+        height: 70vw;
+    }
+    .green01::before {
+        left: 35vw;
+        width: 70vw;
+        height: 70vw;
+        transform-origin: left 35vw;
+    }
+    .green01::after {
+        left: -35vw;
+        width: 70vw;
+        height: 70vw;
+        transform-origin: right 35vw;
+    }
+    /*==============
 navy circle
 ==============*/
-.navy01 {
-    width: 50vw;
-    height: 50vw;
-}
-.navy01::before {
-    left: 25vw;
-    width: 50vw;
-    height: 50vw;
-    transform-origin: left 25vw;
-}
-.navy01::after {
-    left: -25vw;
-    width: 50vw;
-    height: 50vw;
-    transform-origin: right 25vw;
-}
-/*==============
+    .navy01 {
+        width: 50vw;
+        height: 50vw;
+    }
+    .navy01::before {
+        left: 25vw;
+        width: 50vw;
+        height: 50vw;
+        transform-origin: left 25vw;
+    }
+    .navy01::after {
+        left: -25vw;
+        width: 50vw;
+        height: 50vw;
+        transform-origin: right 25vw;
+    }
+    /*==============
 yellow circle
 ==============*/
-.yellow01 {
-    width: 35vw;
-    height: 35vw;
-}
-.yellow01::before {
-    left: 17.5vw;
-    width: 35vw;
-    height: 35vw;
-    transform-origin: left 17.5vw;
-}
-.yellow01::after {
-    left: -17.5vw;
-    width: 35vw;
-    height: 35vw;
-    transform-origin: right 17.5vw;
-}
-/*==============
+    .yellow01 {
+        width: 35vw;
+        height: 35vw;
+    }
+    .yellow01::before {
+        left: 17.5vw;
+        width: 35vw;
+        height: 35vw;
+        transform-origin: left 17.5vw;
+    }
+    .yellow01::after {
+        left: -17.5vw;
+        width: 35vw;
+        height: 35vw;
+        transform-origin: right 17.5vw;
+    }
+    /*==============
 blue circle
 ==============*/
-.blue01 {
-    width: 20vw;
-    height: 20vw;
-}
-.blue01::before {
-    left: 10vw;
-    width: 20vw;
-    height: 20vw;
-    transform-origin: left 10vw;
-}
-.blue01::after {
-    left: -10vw;
-    width: 20vw;
-    height: 20vw;
-    transform-origin: right 10vw;
-}
-.blue00 {
-    width: 7vw;
-    height: 7vw;
-}
-/*==============
+    .blue01 {
+        width: 20vw;
+        height: 20vw;
+    }
+    .blue01::before {
+        left: 10vw;
+        width: 20vw;
+        height: 20vw;
+        transform-origin: left 10vw;
+    }
+    .blue01::after {
+        left: -10vw;
+        width: 20vw;
+        height: 20vw;
+        transform-origin: right 10vw;
+    }
+    .blue00 {
+        width: 7vw;
+        height: 7vw;
+    }
+    /*==============
 red circle
 ==============*/
-.red00 {
-    width: 6vw;
-    height: 6vw;
-}
-/*===================
+    .red00 {
+        width: 6vw;
+        height: 6vw;
+    }
+    /*===================
 animation06
 ====================*/
-@keyframes rhombus {
-    0% {
-        transform: scale3d(0, 0, 1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale3d(20, 20, 1);
-        opacity: 1;
+    @keyframes rhombus {
+        0% {
+            transform: scale3d(0, 0, 1);
+            opacity: 1;
+        }
+        100% {
+            transform: scale3d(20, 20, 1);
+            opacity: 1;
+        }
     }
 }
+
+/*==============
+read
+==============*/
+
+.read {
+    position: fixed;
+    top: 4%;
+    left: 2%;
+    z-index: 10000;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.read p {
+    margin: 0 0 8px 0;
+}
+
+.read ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.read li {
+    list-style: none;
+    margin: 0;
+    padding: 0 10px 0 0;
+}
+
+.read a {
+    color: inherit;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.read .active a {
+    border-bottom: solid 2px #000;
+}
+
+.read a:hover {
+    color: rgb(31, 60, 248);
+}
+
+.read .active a:hover {
+    border-bottom: solid 2px rgb(31, 60, 248);
 }
