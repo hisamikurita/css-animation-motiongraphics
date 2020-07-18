@@ -24,4 +24,4 @@
 
 ● <a href="https://hisamikurita.github.io/css-animation-motiongraphics/css-animation-04/dist/">DEMO</a>
 
-
+![スクリーンショット-(58)_02](https://user-images.githubusercontent.com/47776346/66251162-f6e03200-e787-11e9-82dc-6488ff9d51aa.png)
